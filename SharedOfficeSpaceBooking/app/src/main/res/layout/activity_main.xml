@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="50dp">
+
+    <TextView
+        android:id="@+id/headingtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="85dp"
+        android:text="Log In"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:background="#ADD8E6"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Manager\nLog in"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/managerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:backgroundTint="#2a3b80"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Employee\nLog in"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/employeeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#2a3b80"
+            android:text="" />
+
+    </LinearLayout>
+
+</LinearLayout>
